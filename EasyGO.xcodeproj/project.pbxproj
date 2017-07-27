@@ -1,0 +1,1216 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B2B9C20C4C447BDB69F165D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE0A8D1E24B3926351381BFA /* SystemConfiguration.framework */; };
+		37809BF469833452F7EDE7A8 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6276B8DB9D29C4885E5AA36 /* AssetsLibrary.framework */; };
+		6806BC091D09113C0046398B /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6806BC081D09113C0046398B /* AddressBook.framework */; };
+		681E88C31D3C5D6F00712234 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 681E88C21D3C5D6F00712234 /* libsqlite3.tbd */; };
+		681E88C51D3C5D8200712234 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 681E88C41D3C5D8200712234 /* libz.tbd */; };
+		682904021D4A3D9E00B39440 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682904011D4A3D9E00B39440 /* DataService.swift */; };
+		682904081D4A4BB100B39440 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 682904051D4A4BB100B39440 /* ProgressHUD.bundle */; };
+		682904091D4A4BB100B39440 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 682904071D4A4BB100B39440 /* ProgressHUD.m */; };
+		6829040C1D4A71D100B39440 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6829040B1D4A71D100B39440 /* Chat.swift */; };
+		6829040E1D4AAFB300B39440 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6829040D1D4AAFB300B39440 /* User.swift */; };
+		683BD2691D10BCA400B27CED /* EGRegisterUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683BD2681D10BCA400B27CED /* EGRegisterUserViewController.swift */; };
+		683BD26B1D10C8D000B27CED /* EGSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683BD26A1D10C8D000B27CED /* EGSettingsViewController.swift */; };
+		683BD26D1D10C8F200B27CED /* EGListChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683BD26C1D10C8F200B27CED /* EGListChatsViewController.swift */; };
+		684A59B91D4CA3D500A9D8BA /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 684A59B51D4CA3D500A9D8BA /* Bolts.framework */; };
+		684A59BA1D4CA3D500A9D8BA /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 684A59B61D4CA3D500A9D8BA /* FBSDKCoreKit.framework */; };
+		684A59BB1D4CA3D500A9D8BA /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 684A59B71D4CA3D500A9D8BA /* FBSDKLoginKit.framework */; };
+		684A59BC1D4CA3D500A9D8BA /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 684A59B81D4CA3D500A9D8BA /* FBSDKShareKit.framework */; };
+		684F39C81D1337B40026C950 /* EGBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684F39C71D1337B30026C950 /* EGBaseViewController.swift */; };
+		6872461A1D079E6F00876BD0 /* EGLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687246191D079E6F00876BD0 /* EGLoginViewController.swift */; };
+		688F2F141D2C83C200271687 /* IncomingMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688F2F131D2C83C200271687 /* IncomingMessage.swift */; };
+		688F2F161D2C900600271687 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688F2F151D2C900600271687 /* Camera.swift */; };
+		6892E3101D25A55600C1AD14 /* EGChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6892E30F1D25A55600C1AD14 /* EGChatTableViewCell.swift */; };
+		6892E3121D25B76A00C1AD14 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6892E3111D25B76A00C1AD14 /* Helper.swift */; };
+		6892E3171D25C33100C1AD14 /* EGChooseUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6892E3161D25C33100C1AD14 /* EGChooseUserViewController.swift */; };
+		689B19CE1D2AF22500DDCEEA /* EGChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689B19CD1D2AF22500DDCEEA /* EGChatViewController.swift */; };
+		689B19D01D2B5D6800DDCEEA /* OutgoingMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689B19CF1D2B5D6800DDCEEA /* OutgoingMessage.swift */; };
+		68BD748F1CFF9FA1007476F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BD748E1CFF9FA1007476F6 /* AppDelegate.swift */; };
+		68BD74941CFF9FA1007476F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68BD74921CFF9FA1007476F6 /* Main.storyboard */; };
+		68BD74961CFF9FA1007476F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68BD74951CFF9FA1007476F6 /* Assets.xcassets */; };
+		68BD74A41CFF9FA1007476F6 /* EasyGOUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BD74A31CFF9FA1007476F6 /* EasyGOUITests.swift */; };
+		68C266A71D349D790010F24B /* PushNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C266A61D349D790010F24B /* PushNotifications.swift */; };
+		68C266EE1D37CB9D0010F24B /* PasscodeLock.strings in Resources */ = {isa = PBXBuildFile; fileRef = 68C266D81D37CB9D0010F24B /* PasscodeLock.strings */; };
+		68C266EF1D37CB9D0010F24B /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C266DA1D37CB9D0010F24B /* Functions.swift */; };
+		68C266F01D37CB9D0010F24B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 68C266DB1D37CB9D0010F24B /* Info.plist */; };
+		68C266F11D37CB9D0010F24B /* ChangePasscodeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C266DD1D37CB9D0010F24B /* ChangePasscodeState.swift */; };
+		68C266F21D37CB9D0010F24B /* ConfirmPasscodeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C266DE1D37CB9D0010F24B /* ConfirmPasscodeState.swift */; };
+		68C266F31D37CB9D0010F24B /* EnterPasscodeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C266DF1D37CB9D0010F24B /* EnterPasscodeState.swift */; };
+		68C266F41D37CB9D0010F24B /* PasscodeLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C266E01D37CB9D0010F24B /* PasscodeLock.swift */; };
+		68C266F51D37CB9D0010F24B /* SetPasscodeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C266E11D37CB9D0010F24B /* SetPasscodeState.swift */; };
+		68C266F61D37CB9D0010F24B /* PasscodeLockPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C266E31D37CB9D0010F24B /* PasscodeLockPresenter.swift */; };
+		68C266F71D37CB9D0010F24B /* PasscodeLockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C266E41D37CB9D0010F24B /* PasscodeLockViewController.swift */; };
+		68C266F81D37CB9D0010F24B /* PasscodeLockConfigurationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C266E61D37CB9D0010F24B /* PasscodeLockConfigurationType.swift */; };
+		68C266F91D37CB9D0010F24B /* PasscodeLockStateType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C266E71D37CB9D0010F24B /* PasscodeLockStateType.swift */; };
+		68C266FA1D37CB9D0010F24B /* PasscodeLockType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C266E81D37CB9D0010F24B /* PasscodeLockType.swift */; };
+		68C266FB1D37CB9D0010F24B /* PasscodeRepositoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C266E91D37CB9D0010F24B /* PasscodeRepositoryType.swift */; };
+		68C266FC1D37CB9D0010F24B /* PasscodeLockView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68C266EB1D37CB9D0010F24B /* PasscodeLockView.xib */; };
+		68C266FD1D37CB9D0010F24B /* PasscodeSignButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C266EC1D37CB9D0010F24B /* PasscodeSignButton.swift */; };
+		68C266FE1D37CB9D0010F24B /* PasscodeSignPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C266ED1D37CB9D0010F24B /* PasscodeSignPlaceholderView.swift */; };
+		68C267011D37CC9A0010F24B /* PasscodeLockConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C266FF1D37CC9A0010F24B /* PasscodeLockConfiguration.swift */; };
+		68C267021D37CC9A0010F24B /* UserDefaultsPasscodeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C267001D37CC9A0010F24B /* UserDefaultsPasscodeRepository.swift */; };
+		68CEE68F1D50CF6A00BB763D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 68CEE68E1D50CF6A00BB763D /* GoogleService-Info.plist */; };
+		9FBD1D8768F187920CB0E569 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BBC5BEB8A3524055F983EBE /* CoreVideo.framework */; };
+		A8AD53C752DD40C3F4E3220C /* Pods_EasyGOUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF6D4A0F8F44B169F7953FB6 /* Pods_EasyGOUITests.framework */; };
+		ABBC6F7850E9BB675091EF9B /* BuddyBuildSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F187576546D862299B1F3EF6 /* BuddyBuildSDK.framework */; };
+		CD51CCCB8A92379B03833AB8 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BB500A028DD27EB7107A615 /* CoreMedia.framework */; };
+		D402F091801FBE720D15C7CC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7150F4891F11FA58503834B /* QuartzCore.framework */; };
+		DCD3802ED74294F0331FF24B /* Pods_EasyGO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45DFE7C8493428743A984F33 /* Pods_EasyGO.framework */; };
+		ECFF2A314B9A65328DC3EB9B /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2338025A8A6E1B73E74196E /* CoreTelephony.framework */; };
+		F1B52AF0C0EF93AA5C15CB1A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A363E16FEBF6C4DCA571230D /* AVFoundation.framework */; };
+		F74C6679C2021CF6D369C44E /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE15E2BC213F786E469F33A6 /* CoreText.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		68BD74A01CFF9FA1007476F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68BD74831CFF9FA1007476F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68BD748A1CFF9FA1007476F6;
+			remoteInfo = EasyGO;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07B58181E1ACA9CCB8FF1BD5 /* Pods-EasyGOUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyGOUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyGOUITests/Pods-EasyGOUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1BBC5BEB8A3524055F983EBE /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		2BB5F66522323D254240AE36 /* Pods-EasyGO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyGO.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyGO/Pods-EasyGO.debug.xcconfig"; sourceTree = "<group>"; };
+		45DFE7C8493428743A984F33 /* Pods_EasyGO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyGO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6806BC081D09113C0046398B /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		681E88C21D3C5D6F00712234 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		681E88C41D3C5D8200712234 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		682904011D4A3D9E00B39440 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		682904051D4A4BB100B39440 /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
+		682904061D4A4BB100B39440 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
+		682904071D4A4BB100B39440 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
+		6829040B1D4A71D100B39440 /* Chat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		6829040D1D4AAFB300B39440 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		683BD2681D10BCA400B27CED /* EGRegisterUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EGRegisterUserViewController.swift; sourceTree = "<group>"; };
+		683BD26A1D10C8D000B27CED /* EGSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EGSettingsViewController.swift; sourceTree = "<group>"; };
+		683BD26C1D10C8F200B27CED /* EGListChatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EGListChatsViewController.swift; sourceTree = "<group>"; };
+		684A59B51D4CA3D500A9D8BA /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		684A59B61D4CA3D500A9D8BA /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		684A59B71D4CA3D500A9D8BA /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		684A59B81D4CA3D500A9D8BA /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		684F39C71D1337B30026C950 /* EGBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EGBaseViewController.swift; sourceTree = "<group>"; };
+		687246191D079E6F00876BD0 /* EGLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EGLoginViewController.swift; sourceTree = "<group>"; };
+		688F2F131D2C83C200271687 /* IncomingMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncomingMessage.swift; sourceTree = "<group>"; };
+		688F2F151D2C900600271687 /* Camera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		688F7AFB1D02474300D20FB5 /* EasyGO-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EasyGO-Bridging-Header.h"; sourceTree = "<group>"; };
+		6892E30F1D25A55600C1AD14 /* EGChatTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EGChatTableViewCell.swift; sourceTree = "<group>"; };
+		6892E3111D25B76A00C1AD14 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		6892E3161D25C33100C1AD14 /* EGChooseUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EGChooseUserViewController.swift; sourceTree = "<group>"; };
+		689B19CD1D2AF22500DDCEEA /* EGChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EGChatViewController.swift; sourceTree = "<group>"; };
+		689B19CF1D2B5D6800DDCEEA /* OutgoingMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutgoingMessage.swift; sourceTree = "<group>"; };
+		68BD748B1CFF9FA1007476F6 /* EasyGO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyGO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		68BD748E1CFF9FA1007476F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		68BD74931CFF9FA1007476F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		68BD74951CFF9FA1007476F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		68BD749A1CFF9FA1007476F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68BD749F1CFF9FA1007476F6 /* EasyGOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyGOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		68BD74A31CFF9FA1007476F6 /* EasyGOUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyGOUITests.swift; sourceTree = "<group>"; };
+		68BD74A51CFF9FA1007476F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68C266A61D349D790010F24B /* PushNotifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushNotifications.swift; sourceTree = "<group>"; };
+		68C266D91D37CB9D0010F24B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/PasscodeLock.strings; sourceTree = "<group>"; };
+		68C266DA1D37CB9D0010F24B /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		68C266DB1D37CB9D0010F24B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68C266DD1D37CB9D0010F24B /* ChangePasscodeState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasscodeState.swift; sourceTree = "<group>"; };
+		68C266DE1D37CB9D0010F24B /* ConfirmPasscodeState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmPasscodeState.swift; sourceTree = "<group>"; };
+		68C266DF1D37CB9D0010F24B /* EnterPasscodeState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterPasscodeState.swift; sourceTree = "<group>"; };
+		68C266E01D37CB9D0010F24B /* PasscodeLock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeLock.swift; sourceTree = "<group>"; };
+		68C266E11D37CB9D0010F24B /* SetPasscodeState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetPasscodeState.swift; sourceTree = "<group>"; };
+		68C266E21D37CB9D0010F24B /* PasscodeLock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasscodeLock.h; sourceTree = "<group>"; };
+		68C266E31D37CB9D0010F24B /* PasscodeLockPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeLockPresenter.swift; sourceTree = "<group>"; };
+		68C266E41D37CB9D0010F24B /* PasscodeLockViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeLockViewController.swift; sourceTree = "<group>"; };
+		68C266E61D37CB9D0010F24B /* PasscodeLockConfigurationType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeLockConfigurationType.swift; sourceTree = "<group>"; };
+		68C266E71D37CB9D0010F24B /* PasscodeLockStateType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeLockStateType.swift; sourceTree = "<group>"; };
+		68C266E81D37CB9D0010F24B /* PasscodeLockType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeLockType.swift; sourceTree = "<group>"; };
+		68C266E91D37CB9D0010F24B /* PasscodeRepositoryType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeRepositoryType.swift; sourceTree = "<group>"; };
+		68C266EB1D37CB9D0010F24B /* PasscodeLockView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PasscodeLockView.xib; sourceTree = "<group>"; };
+		68C266EC1D37CB9D0010F24B /* PasscodeSignButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeSignButton.swift; sourceTree = "<group>"; };
+		68C266ED1D37CB9D0010F24B /* PasscodeSignPlaceholderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeSignPlaceholderView.swift; sourceTree = "<group>"; };
+		68C266FF1D37CC9A0010F24B /* PasscodeLockConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeLockConfiguration.swift; sourceTree = "<group>"; };
+		68C267001D37CC9A0010F24B /* UserDefaultsPasscodeRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsPasscodeRepository.swift; sourceTree = "<group>"; };
+		68CEE68E1D50CF6A00BB763D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		68CEE6901D50D98000BB763D /* EasyGO.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = EasyGO.entitlements; sourceTree = "<group>"; };
+		8BB500A028DD27EB7107A615 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		958510F00CF4D52267CA5403 /* Pods-EasyGO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyGO.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyGO/Pods-EasyGO.release.xcconfig"; sourceTree = "<group>"; };
+		A363E16FEBF6C4DCA571230D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		C29865822C07DE6AC3B0168F /* Pods-EasyGOUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyGOUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyGOUITests/Pods-EasyGOUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CF6D4A0F8F44B169F7953FB6 /* Pods_EasyGOUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyGOUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE0A8D1E24B3926351381BFA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		DE15E2BC213F786E469F33A6 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		E7150F4891F11FA58503834B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F187576546D862299B1F3EF6 /* BuddyBuildSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BuddyBuildSDK.framework; sourceTree = "<group>"; };
+		F2338025A8A6E1B73E74196E /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		F6276B8DB9D29C4885E5AA36 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		68BD74881CFF9FA1007476F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B2B9C20C4C447BDB69F165D /* SystemConfiguration.framework in Frameworks */,
+				6806BC091D09113C0046398B /* AddressBook.framework in Frameworks */,
+				684A59BC1D4CA3D500A9D8BA /* FBSDKShareKit.framework in Frameworks */,
+				ABBC6F7850E9BB675091EF9B /* BuddyBuildSDK.framework in Frameworks */,
+				684A59B91D4CA3D500A9D8BA /* Bolts.framework in Frameworks */,
+				684A59BB1D4CA3D500A9D8BA /* FBSDKLoginKit.framework in Frameworks */,
+				37809BF469833452F7EDE7A8 /* AssetsLibrary.framework in Frameworks */,
+				F74C6679C2021CF6D369C44E /* CoreText.framework in Frameworks */,
+				ECFF2A314B9A65328DC3EB9B /* CoreTelephony.framework in Frameworks */,
+				D402F091801FBE720D15C7CC /* QuartzCore.framework in Frameworks */,
+				684A59BA1D4CA3D500A9D8BA /* FBSDKCoreKit.framework in Frameworks */,
+				F1B52AF0C0EF93AA5C15CB1A /* AVFoundation.framework in Frameworks */,
+				CD51CCCB8A92379B03833AB8 /* CoreMedia.framework in Frameworks */,
+				9FBD1D8768F187920CB0E569 /* CoreVideo.framework in Frameworks */,
+				DCD3802ED74294F0331FF24B /* Pods_EasyGO.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68BD749C1CFF9FA1007476F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				681E88C51D3C5D8200712234 /* libz.tbd in Frameworks */,
+				681E88C31D3C5D6F00712234 /* libsqlite3.tbd in Frameworks */,
+				A8AD53C752DD40C3F4E3220C /* Pods_EasyGOUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2831D71C0DCF7EAE07EBB96F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2BB5F66522323D254240AE36 /* Pods-EasyGO.debug.xcconfig */,
+				958510F00CF4D52267CA5403 /* Pods-EasyGO.release.xcconfig */,
+				C29865822C07DE6AC3B0168F /* Pods-EasyGOUITests.debug.xcconfig */,
+				07B58181E1ACA9CCB8FF1BD5 /* Pods-EasyGOUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		682904031D4A464C00B39440 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				68BD748E1CFF9FA1007476F6 /* AppDelegate.swift */,
+				682904011D4A3D9E00B39440 /* DataService.swift */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		682904041D4A4BB100B39440 /* ProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				682904051D4A4BB100B39440 /* ProgressHUD.bundle */,
+				682904061D4A4BB100B39440 /* ProgressHUD.h */,
+				682904071D4A4BB100B39440 /* ProgressHUD.m */,
+			);
+			path = ProgressHUD;
+			sourceTree = "<group>";
+		};
+		6829040A1D4A71B700B39440 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6829040B1D4A71D100B39440 /* Chat.swift */,
+				6829040D1D4AAFB300B39440 /* User.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		684F39C61D1337970026C950 /* BaseViews */ = {
+			isa = PBXGroup;
+			children = (
+				684F39C71D1337B30026C950 /* EGBaseViewController.swift */,
+			);
+			name = BaseViews;
+			sourceTree = "<group>";
+		};
+		68660E111D07B87200F54E08 /* Facebook */ = {
+			isa = PBXGroup;
+			children = (
+				684A59B51D4CA3D500A9D8BA /* Bolts.framework */,
+				684A59B61D4CA3D500A9D8BA /* FBSDKCoreKit.framework */,
+				684A59B71D4CA3D500A9D8BA /* FBSDKLoginKit.framework */,
+				684A59B81D4CA3D500A9D8BA /* FBSDKShareKit.framework */,
+			);
+			name = Facebook;
+			sourceTree = "<group>";
+		};
+		688F7AFD1D024A1900D20FB5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				688F7B041D024A9700D20FB5 /* Chat */,
+				688F7B031D024A7800D20FB5 /* ListChats */,
+				688F7B021D024A5400D20FB5 /* Settings */,
+				688F7B001D024A3C00D20FB5 /* Login, Register */,
+				684F39C61D1337970026C950 /* BaseViews */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		688F7AFE1D024A2200D20FB5 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				6892E3111D25B76A00C1AD14 /* Helper.swift */,
+				68C266A61D349D790010F24B /* PushNotifications.swift */,
+				688F2F151D2C900600271687 /* Camera.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		688F7AFF1D024A2A00D20FB5 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				682904041D4A4BB100B39440 /* ProgressHUD */,
+				68C266D71D37CB9D0010F24B /* PasscodeLock */,
+				68660E111D07B87200F54E08 /* Facebook */,
+			);
+			name = Dependencies;
+			path = EasyGO;
+			sourceTree = "<group>";
+		};
+		688F7B001D024A3C00D20FB5 /* Login, Register */ = {
+			isa = PBXGroup;
+			children = (
+				68C266D41D37C0550010F24B /* Passcode */,
+				683BD2681D10BCA400B27CED /* EGRegisterUserViewController.swift */,
+				687246191D079E6F00876BD0 /* EGLoginViewController.swift */,
+			);
+			name = "Login, Register";
+			sourceTree = "<group>";
+		};
+		688F7B021D024A5400D20FB5 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				683BD26A1D10C8D000B27CED /* EGSettingsViewController.swift */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		688F7B031D024A7800D20FB5 /* ListChats */ = {
+			isa = PBXGroup;
+			children = (
+				689B19CC1D2AF1FD00DDCEEA /* Cell */,
+				6892E3131D25C26100C1AD14 /* ChooseUser */,
+				683BD26C1D10C8F200B27CED /* EGListChatsViewController.swift */,
+			);
+			name = ListChats;
+			sourceTree = "<group>";
+		};
+		688F7B041D024A9700D20FB5 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				689B19D11D2B6EB300DDCEEA /* Message */,
+				689B19CD1D2AF22500DDCEEA /* EGChatViewController.swift */,
+			);
+			name = Chat;
+			sourceTree = "<group>";
+		};
+		688F7B051D024AF000D20FB5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				68BD74951CFF9FA1007476F6 /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		688F7B061D024B0800D20FB5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				68BD749A1CFF9FA1007476F6 /* Info.plist */,
+				68CEE68E1D50CF6A00BB763D /* GoogleService-Info.plist */,
+				688F7AFB1D02474300D20FB5 /* EasyGO-Bridging-Header.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6892E3131D25C26100C1AD14 /* ChooseUser */ = {
+			isa = PBXGroup;
+			children = (
+				6892E3161D25C33100C1AD14 /* EGChooseUserViewController.swift */,
+			);
+			name = ChooseUser;
+			sourceTree = "<group>";
+		};
+		689B19CC1D2AF1FD00DDCEEA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6892E30F1D25A55600C1AD14 /* EGChatTableViewCell.swift */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		689B19D11D2B6EB300DDCEEA /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				689B19CF1D2B5D6800DDCEEA /* OutgoingMessage.swift */,
+				688F2F131D2C83C200271687 /* IncomingMessage.swift */,
+			);
+			name = Message;
+			sourceTree = "<group>";
+		};
+		68BD74821CFF9FA1007476F6 = {
+			isa = PBXGroup;
+			children = (
+				688F7AFF1D024A2A00D20FB5 /* Dependencies */,
+				68BD748D1CFF9FA1007476F6 /* EasyGO */,
+				68BD74A21CFF9FA1007476F6 /* EasyGOUITests */,
+				68BD748C1CFF9FA1007476F6 /* Products */,
+				8254FBBDAF5E01680EDCA953 /* Frameworks */,
+				2831D71C0DCF7EAE07EBB96F /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		68BD748C1CFF9FA1007476F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68BD748B1CFF9FA1007476F6 /* EasyGO.app */,
+				68BD749F1CFF9FA1007476F6 /* EasyGOUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		68BD748D1CFF9FA1007476F6 /* EasyGO */ = {
+			isa = PBXGroup;
+			children = (
+				68CEE6901D50D98000BB763D /* EasyGO.entitlements */,
+				688F7B051D024AF000D20FB5 /* Resources */,
+				682904031D4A464C00B39440 /* Config */,
+				688F7AFE1D024A2200D20FB5 /* Utilities */,
+				6829040A1D4A71B700B39440 /* Model */,
+				688F7AFD1D024A1900D20FB5 /* ViewControllers */,
+				68BD74921CFF9FA1007476F6 /* Main.storyboard */,
+				688F7B061D024B0800D20FB5 /* Supporting Files */,
+			);
+			path = EasyGO;
+			sourceTree = "<group>";
+		};
+		68BD74A21CFF9FA1007476F6 /* EasyGOUITests */ = {
+			isa = PBXGroup;
+			children = (
+				68BD74A31CFF9FA1007476F6 /* EasyGOUITests.swift */,
+				68BD74A51CFF9FA1007476F6 /* Info.plist */,
+			);
+			path = EasyGOUITests;
+			sourceTree = "<group>";
+		};
+		68C266D41D37C0550010F24B /* Passcode */ = {
+			isa = PBXGroup;
+			children = (
+				68C266FF1D37CC9A0010F24B /* PasscodeLockConfiguration.swift */,
+				68C267001D37CC9A0010F24B /* UserDefaultsPasscodeRepository.swift */,
+			);
+			name = Passcode;
+			sourceTree = "<group>";
+		};
+		68C266D71D37CB9D0010F24B /* PasscodeLock */ = {
+			isa = PBXGroup;
+			children = (
+				68C266D81D37CB9D0010F24B /* PasscodeLock.strings */,
+				68C266DA1D37CB9D0010F24B /* Functions.swift */,
+				68C266DB1D37CB9D0010F24B /* Info.plist */,
+				68C266DC1D37CB9D0010F24B /* PasscodeLock */,
+				68C266E21D37CB9D0010F24B /* PasscodeLock.h */,
+				68C266E31D37CB9D0010F24B /* PasscodeLockPresenter.swift */,
+				68C266E41D37CB9D0010F24B /* PasscodeLockViewController.swift */,
+				68C266E51D37CB9D0010F24B /* Protocols */,
+				68C266EA1D37CB9D0010F24B /* Views */,
+			);
+			path = PasscodeLock;
+			sourceTree = "<group>";
+		};
+		68C266DC1D37CB9D0010F24B /* PasscodeLock */ = {
+			isa = PBXGroup;
+			children = (
+				68C266DD1D37CB9D0010F24B /* ChangePasscodeState.swift */,
+				68C266DE1D37CB9D0010F24B /* ConfirmPasscodeState.swift */,
+				68C266DF1D37CB9D0010F24B /* EnterPasscodeState.swift */,
+				68C266E01D37CB9D0010F24B /* PasscodeLock.swift */,
+				68C266E11D37CB9D0010F24B /* SetPasscodeState.swift */,
+			);
+			path = PasscodeLock;
+			sourceTree = "<group>";
+		};
+		68C266E51D37CB9D0010F24B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				68C266E61D37CB9D0010F24B /* PasscodeLockConfigurationType.swift */,
+				68C266E71D37CB9D0010F24B /* PasscodeLockStateType.swift */,
+				68C266E81D37CB9D0010F24B /* PasscodeLockType.swift */,
+				68C266E91D37CB9D0010F24B /* PasscodeRepositoryType.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		68C266EA1D37CB9D0010F24B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				68C266EB1D37CB9D0010F24B /* PasscodeLockView.xib */,
+				68C266EC1D37CB9D0010F24B /* PasscodeSignButton.swift */,
+				68C266ED1D37CB9D0010F24B /* PasscodeSignPlaceholderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8254FBBDAF5E01680EDCA953 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				681E88C41D3C5D8200712234 /* libz.tbd */,
+				681E88C21D3C5D6F00712234 /* libsqlite3.tbd */,
+				6806BC081D09113C0046398B /* AddressBook.framework */,
+				F187576546D862299B1F3EF6 /* BuddyBuildSDK.framework */,
+				F6276B8DB9D29C4885E5AA36 /* AssetsLibrary.framework */,
+				DE15E2BC213F786E469F33A6 /* CoreText.framework */,
+				F2338025A8A6E1B73E74196E /* CoreTelephony.framework */,
+				DE0A8D1E24B3926351381BFA /* SystemConfiguration.framework */,
+				E7150F4891F11FA58503834B /* QuartzCore.framework */,
+				A363E16FEBF6C4DCA571230D /* AVFoundation.framework */,
+				8BB500A028DD27EB7107A615 /* CoreMedia.framework */,
+				1BBC5BEB8A3524055F983EBE /* CoreVideo.framework */,
+				45DFE7C8493428743A984F33 /* Pods_EasyGO.framework */,
+				CF6D4A0F8F44B169F7953FB6 /* Pods_EasyGOUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		68BD748A1CFF9FA1007476F6 /* EasyGO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68BD74A81CFF9FA1007476F6 /* Build configuration list for PBXNativeTarget "EasyGO" */;
+			buildPhases = (
+				54C85855A1D34BD58078DB03 /* 📦 Check Pods Manifest.lock */,
+				68BD74871CFF9FA1007476F6 /* Sources */,
+				68BD74881CFF9FA1007476F6 /* Frameworks */,
+				68BD74891CFF9FA1007476F6 /* Resources */,
+				63ABE12E142BEAC33C9A8D02 /* 📦 Embed Pods Frameworks */,
+				32222AD449FBC468333738CF /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EasyGO;
+			productName = EasyGO;
+			productReference = 68BD748B1CFF9FA1007476F6 /* EasyGO.app */;
+			productType = "com.apple.product-type.application";
+		};
+		68BD749E1CFF9FA1007476F6 /* EasyGOUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68BD74AB1CFF9FA1007476F6 /* Build configuration list for PBXNativeTarget "EasyGOUITests" */;
+			buildPhases = (
+				9E130EF772D001A6F867A3DB /* 📦 Check Pods Manifest.lock */,
+				4C4082E5FE50C4FD28FEE7BD /* [CP] Check Pods Manifest.lock */,
+				68BD749B1CFF9FA1007476F6 /* Sources */,
+				68BD749C1CFF9FA1007476F6 /* Frameworks */,
+				68BD749D1CFF9FA1007476F6 /* Resources */,
+				013BCF152FF0AFB669534071 /* [CP] Copy Pods Resources */,
+				D38EC8618C39C09580C24072 /* [CP] Embed Pods Frameworks */,
+				ECAA1A5B0B092A1013893956 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				68BD74A11CFF9FA1007476F6 /* PBXTargetDependency */,
+			);
+			name = EasyGOUITests;
+			productName = EasyGOUITests;
+			productReference = 68BD749F1CFF9FA1007476F6 /* EasyGOUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		68BD74831CFF9FA1007476F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = EG;
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = FixmyIphones;
+				TargetAttributes = {
+					68BD748A1CFF9FA1007476F6 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = XJ86P3QM96;
+						LastSwiftMigration = 0800;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.SafariKeychain = {
+								enabled = 1;
+							};
+						};
+					};
+					68BD749E1CFF9FA1007476F6 = {
+						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
+						TestTargetID = 68BD748A1CFF9FA1007476F6;
+					};
+				};
+			};
+			buildConfigurationList = 68BD74861CFF9FA1007476F6 /* Build configuration list for PBXProject "EasyGO" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 68BD74821CFF9FA1007476F6;
+			productRefGroup = 68BD748C1CFF9FA1007476F6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				68BD748A1CFF9FA1007476F6 /* EasyGO */,
+				68BD749E1CFF9FA1007476F6 /* EasyGOUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		68BD74891CFF9FA1007476F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68BD74961CFF9FA1007476F6 /* Assets.xcassets in Resources */,
+				68BD74941CFF9FA1007476F6 /* Main.storyboard in Resources */,
+				682904081D4A4BB100B39440 /* ProgressHUD.bundle in Resources */,
+				68C266FC1D37CB9D0010F24B /* PasscodeLockView.xib in Resources */,
+				68C266F01D37CB9D0010F24B /* Info.plist in Resources */,
+				68C266EE1D37CB9D0010F24B /* PasscodeLock.strings in Resources */,
+				68CEE68F1D50CF6A00BB763D /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68BD749D1CFF9FA1007476F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		013BCF152FF0AFB669534071 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasyGOUITests/Pods-EasyGOUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		32222AD449FBC468333738CF /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasyGO/Pods-EasyGO-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C4082E5FE50C4FD28FEE7BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		54C85855A1D34BD58078DB03 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		63ABE12E142BEAC33C9A8D02 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasyGO/Pods-EasyGO-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E130EF772D001A6F867A3DB /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D38EC8618C39C09580C24072 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasyGOUITests/Pods-EasyGOUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECAA1A5B0B092A1013893956 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasyGOUITests/Pods-EasyGOUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		68BD74871CFF9FA1007476F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68C266F41D37CB9D0010F24B /* PasscodeLock.swift in Sources */,
+				689B19CE1D2AF22500DDCEEA /* EGChatViewController.swift in Sources */,
+				68C266F81D37CB9D0010F24B /* PasscodeLockConfigurationType.swift in Sources */,
+				68C266F71D37CB9D0010F24B /* PasscodeLockViewController.swift in Sources */,
+				68C266F21D37CB9D0010F24B /* ConfirmPasscodeState.swift in Sources */,
+				683BD2691D10BCA400B27CED /* EGRegisterUserViewController.swift in Sources */,
+				68C266F61D37CB9D0010F24B /* PasscodeLockPresenter.swift in Sources */,
+				683BD26B1D10C8D000B27CED /* EGSettingsViewController.swift in Sources */,
+				6872461A1D079E6F00876BD0 /* EGLoginViewController.swift in Sources */,
+				684F39C81D1337B40026C950 /* EGBaseViewController.swift in Sources */,
+				68C266FA1D37CB9D0010F24B /* PasscodeLockType.swift in Sources */,
+				6892E3101D25A55600C1AD14 /* EGChatTableViewCell.swift in Sources */,
+				68C266F91D37CB9D0010F24B /* PasscodeLockStateType.swift in Sources */,
+				68C267011D37CC9A0010F24B /* PasscodeLockConfiguration.swift in Sources */,
+				68C266F11D37CB9D0010F24B /* ChangePasscodeState.swift in Sources */,
+				68BD748F1CFF9FA1007476F6 /* AppDelegate.swift in Sources */,
+				68C266FD1D37CB9D0010F24B /* PasscodeSignButton.swift in Sources */,
+				688F2F141D2C83C200271687 /* IncomingMessage.swift in Sources */,
+				6892E3171D25C33100C1AD14 /* EGChooseUserViewController.swift in Sources */,
+				68C266FE1D37CB9D0010F24B /* PasscodeSignPlaceholderView.swift in Sources */,
+				68C266F31D37CB9D0010F24B /* EnterPasscodeState.swift in Sources */,
+				6892E3121D25B76A00C1AD14 /* Helper.swift in Sources */,
+				68C267021D37CC9A0010F24B /* UserDefaultsPasscodeRepository.swift in Sources */,
+				682904021D4A3D9E00B39440 /* DataService.swift in Sources */,
+				6829040E1D4AAFB300B39440 /* User.swift in Sources */,
+				68C266EF1D37CB9D0010F24B /* Functions.swift in Sources */,
+				688F2F161D2C900600271687 /* Camera.swift in Sources */,
+				68C266A71D349D790010F24B /* PushNotifications.swift in Sources */,
+				689B19D01D2B5D6800DDCEEA /* OutgoingMessage.swift in Sources */,
+				6829040C1D4A71D100B39440 /* Chat.swift in Sources */,
+				68C266F51D37CB9D0010F24B /* SetPasscodeState.swift in Sources */,
+				683BD26D1D10C8F200B27CED /* EGListChatsViewController.swift in Sources */,
+				682904091D4A4BB100B39440 /* ProgressHUD.m in Sources */,
+				68C266FB1D37CB9D0010F24B /* PasscodeRepositoryType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68BD749B1CFF9FA1007476F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68BD74A41CFF9FA1007476F6 /* EasyGOUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		68BD74A11CFF9FA1007476F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 68BD748A1CFF9FA1007476F6 /* EasyGO */;
+			targetProxy = 68BD74A01CFF9FA1007476F6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		68BD74921CFF9FA1007476F6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68BD74931CFF9FA1007476F6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		68C266D81D37CB9D0010F24B /* PasscodeLock.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68C266D91D37CB9D0010F24B /* en */,
+			);
+			name = PasscodeLock.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		68BD74A61CFF9FA1007476F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		68BD74A71CFF9FA1007476F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		68BD74A91CFF9FA1007476F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BB5F66522323D254240AE36 /* Pods-EasyGO.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = EasyGO/EasyGO.entitlements;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/EasyGO",
+					"\"~/Documents/FacebookSDK\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PODS_ROOT}/Firebase/Headers",
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Backendless-ios-SDK\"",
+					"\"${PODS_ROOT}/Headers/Public/Fabric\"",
+					"\"${PODS_ROOT}/Headers/Public/Firebase\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseAnalytics\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseDatabase\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseInstanceID\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseMessaging\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleAppUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleAuthUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleIPhoneUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleInterchangeUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleNetworkingUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleSignIn\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleSymbolUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/TwitterCore\"",
+					"\"${PODS_ROOT}/Headers/Public/TwitterKit\"",
+				);
+				INFOPLIST_FILE = EasyGO/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"Accounts\"",
+					"-framework",
+					"\"AdSupport\"",
+					"-framework",
+					"\"AddressBook\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreData\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"DACircularProgress\"",
+					"-framework",
+					"\"FirebaseAnalytics\"",
+					"-framework",
+					"\"FirebaseDatabase\"",
+					"-framework",
+					"\"FirebaseInstanceID\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"GoogleAppUtilities\"",
+					"-framework",
+					"\"GoogleAuthUtilities\"",
+					"-framework",
+					"\"GoogleInterchangeUtilities\"",
+					"-framework",
+					"\"GoogleNetworkingUtilities\"",
+					"-framework",
+					"\"GoogleSignIn\"",
+					"-framework",
+					"\"GoogleSymbolUtilities\"",
+					"-framework",
+					"\"GoogleUtilities\"",
+					"-framework",
+					"\"IDMPhotoBrowser\"",
+					"-framework",
+					"\"JSQMessagesViewController\"",
+					"-framework",
+					"\"JSQSystemSoundPlayer\"",
+					"-framework",
+					"\"MapKit\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"SDWebImage\"",
+					"-framework",
+					"\"SafariServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"Social\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"pop\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = no.fixmyiphones.EasyGO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EasyGO/EasyGO-Bridging-Header.h";
+				SWIFT_VERSION = 2.3;
+			};
+			name = Debug;
+		};
+		68BD74AA1CFF9FA1007476F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 958510F00CF4D52267CA5403 /* Pods-EasyGO.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = EasyGO/EasyGO.entitlements;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/EasyGO",
+					"\"~/Documents/FacebookSDK\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PODS_ROOT}/Firebase/Headers",
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Backendless-ios-SDK\"",
+					"\"${PODS_ROOT}/Headers/Public/Fabric\"",
+					"\"${PODS_ROOT}/Headers/Public/Firebase\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseAnalytics\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseDatabase\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseInstanceID\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseMessaging\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleAppUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleAuthUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleIPhoneUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleInterchangeUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleNetworkingUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleSignIn\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleSymbolUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleUtilities\"",
+					"\"${PODS_ROOT}/Headers/Public/TwitterCore\"",
+					"\"${PODS_ROOT}/Headers/Public/TwitterKit\"",
+				);
+				INFOPLIST_FILE = EasyGO/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"Accounts\"",
+					"-framework",
+					"\"AdSupport\"",
+					"-framework",
+					"\"AddressBook\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreData\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"DACircularProgress\"",
+					"-framework",
+					"\"FirebaseAnalytics\"",
+					"-framework",
+					"\"FirebaseDatabase\"",
+					"-framework",
+					"\"FirebaseInstanceID\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"GoogleAppUtilities\"",
+					"-framework",
+					"\"GoogleAuthUtilities\"",
+					"-framework",
+					"\"GoogleInterchangeUtilities\"",
+					"-framework",
+					"\"GoogleNetworkingUtilities\"",
+					"-framework",
+					"\"GoogleSignIn\"",
+					"-framework",
+					"\"GoogleSymbolUtilities\"",
+					"-framework",
+					"\"GoogleUtilities\"",
+					"-framework",
+					"\"IDMPhotoBrowser\"",
+					"-framework",
+					"\"JSQMessagesViewController\"",
+					"-framework",
+					"\"JSQSystemSoundPlayer\"",
+					"-framework",
+					"\"MapKit\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"SDWebImage\"",
+					"-framework",
+					"\"SafariServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"Social\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"pop\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = no.fixmyiphones.EasyGO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EasyGO/EasyGO-Bridging-Header.h";
+				SWIFT_VERSION = 2.3;
+			};
+			name = Release;
+		};
+		68BD74AC1CFF9FA1007476F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C29865822C07DE6AC3B0168F /* Pods-EasyGOUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = EasyGOUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = no.fixmyiphones.EasyGOUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
+				TEST_TARGET_NAME = EasyGO;
+			};
+			name = Debug;
+		};
+		68BD74AD1CFF9FA1007476F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07B58181E1ACA9CCB8FF1BD5 /* Pods-EasyGOUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = EasyGOUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = no.fixmyiphones.EasyGOUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
+				TEST_TARGET_NAME = EasyGO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		68BD74861CFF9FA1007476F6 /* Build configuration list for PBXProject "EasyGO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68BD74A61CFF9FA1007476F6 /* Debug */,
+				68BD74A71CFF9FA1007476F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68BD74A81CFF9FA1007476F6 /* Build configuration list for PBXNativeTarget "EasyGO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68BD74A91CFF9FA1007476F6 /* Debug */,
+				68BD74AA1CFF9FA1007476F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68BD74AB1CFF9FA1007476F6 /* Build configuration list for PBXNativeTarget "EasyGOUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68BD74AC1CFF9FA1007476F6 /* Debug */,
+				68BD74AD1CFF9FA1007476F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 68BD74831CFF9FA1007476F6 /* Project object */;
+}
